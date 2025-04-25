@@ -1,0 +1,29 @@
+.notFoundMain {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff7ed;
+  padding: 1rem;
+}
+
+.notFoundMain > a {
+  height: 3rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #252525;
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 40%;
+  color: #ffff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}

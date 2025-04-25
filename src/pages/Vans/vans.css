@@ -1,0 +1,148 @@
+.vansMain {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #fff7ed;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+.vansMainHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 2.5rem;
+}
+
+.vansMainHeader > h1 {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.vansFilters > button {
+  margin-right: 0.5rem;
+  border: none;
+  background-color: #ffead0;
+  color: #4d4d4d;
+  border-radius: 0.25rem;
+  height: 2rem;
+  width: 4rem;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vansFilters > .clearBtn {
+  background-color: transparent;
+  margin-left: 1rem;
+  width: 6rem;
+}
+
+.vansFilters > .clearBtn:hover {
+  text-decoration: underline;
+  color: #4d4d4d;
+}
+
+.vansFilters > .simpleBtn:hover {
+  background-color: #e17654;
+  color: #fff7ed;
+}
+
+.vansFilters > .ruggedBtn:hover {
+  background-color: #115e59;
+  color: #fff7ed;
+}
+
+.vansFilters > .luxuryBtn:hover {
+  background-color: #161616;
+  color: #fff7ed;
+}
+
+.vansFilters > .simpleBtn.selected {
+  background-color: #e17654;
+  color: #fff7ed;
+}
+
+.vansFilters > .ruggedBtn.selected {
+  background-color: #115e59;
+  color: #fff7ed;
+}
+
+.vansFilters > .luxuryBtn.selected {
+  background-color: #161616;
+  color: #fff7ed;
+}
+
+.vansCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .vansCards {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* 2 columnas en pantallas medianas */
+  }
+}
+
+/* Asegurar que el enlace no afecte la disposición */
+.vanLink {
+  display: block; /* Hace que el enlace envuelva correctamente el contenido */
+  text-decoration: none; /* Elimina subrayado */
+  color: inherit; /* Mantiene colores originales */
+}
+
+.vansCards .van {
+  display: flex;
+  flex-direction: column;
+}
+
+.vansCards .vanImg {
+  width: 100% !important;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.vansCards .vanInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8rem;
+}
+
+.vansCards .vanPrice {
+  display: flex;
+  flex-direction: row;
+}
+
+.vansCards .vanType {
+  font-style: inherit;
+  background-color: #ffead0;
+  color: white;
+  border-radius: 0.25rem;
+  height: 2rem;
+  width: 4rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+/* Colores según el tipo de van */
+.vansCards .vanType-simple {
+  background-color: #e17654;
+}
+
+.vansCards .vanType-rugged {
+  background-color: #115e59;
+}
+
+.vansCards .vanType-luxury {
+  background-color: #161616;
+}

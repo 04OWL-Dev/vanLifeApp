@@ -1,0 +1,17 @@
+.hostNav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1rem 0 1rem; /* Removed bottom padding */
+  background-color: #fff7ed;
+}
+
+.hostNav > a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.hostNav > a:hover {
+  text-decoration: underline;
+  color: black;
+  font-weight: 600;
+}

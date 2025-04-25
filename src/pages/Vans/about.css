@@ -1,0 +1,39 @@
+img {
+  width: 100vw;
+  height: auto;
+  filter: contrast(1.2) brightness(1.1);
+}
+
+.aboutSection {
+  margin: 1.5rem;
+  padding: 2rem;
+}
+
+.aboutSection h1,
+p {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.aboutSection > aside {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  background-color: #ffcc8d;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.aboutSection > aside > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #161616;
+  text-decoration: none;
+  width: 30%;
+  height: 3rem;
+  border-radius: 0.5rem;
+}

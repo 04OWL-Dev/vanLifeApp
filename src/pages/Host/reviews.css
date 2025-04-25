@@ -1,0 +1,70 @@
+.reviewsMain {
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #fff7ed;
+}
+.reviewsHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.reviewsHeader > p {
+  color: #4d4d4d;
+}
+
+.reviewsHeader > p > span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.reviewsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.graph {
+  width: 45%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+@media (max-width: 900px) {
+  .graph {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    transition: width 0.3s ease;
+  }
+}
+.reviewsContainer > h3 {
+  margin-top: 1rem;
+}
+
+.reviewStar {
+  color: #ff8c38;
+  font-size: 1.25rem;
+}
+
+.reviewInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.reviewInfo > h4 {
+  margin: 0.5rem 0;
+}
+
+.reviewInfo > p {
+  color: #4d4d4d;
+  font-weight: normal;
+}
+
+.reviewLine {
+  margin: 1.5rem 0;
+}

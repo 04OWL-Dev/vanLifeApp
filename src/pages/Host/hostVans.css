@@ -1,0 +1,81 @@
+.hostVansHeader h1 {
+  margin: 0 0 2rem 0;
+}
+
+.hostVansMain {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #fff7ed;
+  margin-bottom: 0;
+  flex-grow: 1;
+}
+
+.vansContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.vansContainer > a {
+  text-decoration: none;
+  color: black;
+}
+
+.vanCard {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+  padding: 0.5rem;
+  background-color: #ffff;
+  margin: 0.5rem;
+  border-radius: 8px;
+}
+
+.vanCard > img {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.25rem;
+}
+
+.vanInfo {
+  margin: 0.5rem;
+}
+
+.vanInfo > p {
+  color: #4d4d4d;
+}
+
+.vanInfo > h3,
+p {
+  margin: 0;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 767px) {
+  .vanCard {
+    width: 90%; /* Adjust width for smaller screens */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .vanCard > img {
+    width: 30%; /* Adjust width for smaller screens */
+    margin: 0; /* Remove auto horizontal margin */
+  }
+}
+
+/* Media Query for Tablet Devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .vanCard {
+    width: 65%; /* Adjust width for medium screens */
+  }
+}

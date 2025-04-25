@@ -1,0 +1,22 @@
+.vanDetailsCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 0;
+  background-color: #ffff;
+  margin: 0rem auto;
+  border-radius: 8px;
+}
+
+.vanDetailsCard > p {
+  margin-bottom: 0.5rem;
+}
+
+.vanDetailsCard > p > .label {
+  font-weight: bold;
+}
+
+.vanDetailsCard > p > .text {
+  font-weight: normal;
+  margin-left: 0.2rem;
+}

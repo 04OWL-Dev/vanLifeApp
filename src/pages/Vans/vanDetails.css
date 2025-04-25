@@ -1,0 +1,104 @@
+.vanDetailsMain {
+  width: 100%;
+  min-height: 100vh;
+  flex-grow: 1;
+  background-color: #fff7ed;
+  padding: 1rem;
+}
+
+.vanDetailsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.vanDetailsHeader > a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.vanDetailsHeader > a:hover {
+  text-decoration: underline;
+}
+
+.vanDetails {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  height: 80%;
+  justify-content: center;
+}
+
+.vanDetails > img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.vanType {
+  font-style: inherit;
+  color: white;
+  border-radius: 0.25rem;
+  height: 2rem;
+  width: 4rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 400;
+}
+
+.vanType-simple {
+  background-color: #e17654;
+}
+
+.vanType-rugged {
+  background-color: #115e59;
+}
+
+.vanType-luxury {
+  background-color: #161616;
+}
+
+.vanDetails > h2 {
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.vanPrice {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2em;
+}
+
+.vanPrice > span {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.vanDetails > p:nth-child(1) {
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.vanDetails > p:nth-child(4),
+p:nth-child(5) {
+  font-weight: 400;
+}
+
+.rentBtn {
+  font-style: inherit;
+  width: 100%;
+  background-color: #ff8c38;
+  border-radius: 0.25rem;
+  border: none;
+  color: white;
+  height: 2.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 1rem;
+}

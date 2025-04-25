@@ -1,0 +1,61 @@
+.incomeMain {
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #fff7ed;
+}
+
+.incomeHeader span {
+  color: #4d4d4d;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.incomeGraph {
+  width: 45%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  background: transparent;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+  .incomeGraph {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    transition: width 0.3s ease;
+    margin-bottom: 2rem;
+  }
+}
+
+.incomesAreaTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.incomesAreaTitle span {
+  color: #4d4d4d;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: white;
+}
+
+.transaction > h3 {
+  font-size: x-large;
+}
+
+.transaction > p {
+  color: #4d4d4d;
+}
