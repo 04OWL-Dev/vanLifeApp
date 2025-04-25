@@ -43,8 +43,12 @@ export default function Login() {
         <h1>Sign in to your account</h1>
         {error?.message && <p className="error">{error.message}</p>}
         <Form method="post" className="loginForm" replace>
-          <input name="email" type="email" placeholder="Email address" />
-          <input name="password" type="password" placeholder="Password" />
+          <input
+            name="email"
+            type="email"
+            placeholder="Email address: b@b.com"
+          />
+          <input name="password" type="password" placeholder="Password: p123" />
           <button disabled={state === "submitting"}>
             {state === "submitting" ? "Signing in..." : "Log in"}
           </button>
